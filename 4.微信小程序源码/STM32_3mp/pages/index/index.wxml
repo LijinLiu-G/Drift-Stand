@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<view class="page-container">
+<!-- 头部部分 -->
+  <view class="header-container">
+    <view class="header-air">
+      <view>
+        空气质量 - {{ airText }}
+      </view>
+      <view>
+        {{ area }} - {{ city }}
+      </view>
+    </view>
+    <view class="header-title">
+      <view>
+        {{ airValue }}
+      </view>
+      <view>
+        {{ weather }}
+      </view>
+    </view>
+    <view class="header-ad">
+      {{ weatherAdvice }}
+    </view>
+  </view>
+<!-- 数据部分 -->
+<view class="data-container">
+<!-- 温度 -->
+  <view class="data-card">
+   <image class="data-card__icon" src="/static/temp.png" />
+   <view class="data-card__text">
+     <view class="data-card__title">
+       温度
+     </view>
+     <view class="data-card__value">
+       {{ Temp }} ℃
+     </view>
+   </view>
+  </view>
+  <!-- 湿度 -->
+  <view class="data-card">
+   <image class="data-card__icon" src="/static/hum.png" />
+   <view class="data-card__text">
+     <view class="data-card__title">
+       湿度
+     </view>
+     <view class="data-card__value">
+      {{ Hum }} %
+     </view>
+   </view>
+  </view>
+  <!-- 光照度 -->
+  <view class="data-card">
+   <image class="data-card__icon" src="/static/light.png" />
+   <view class="data-card__text">
+     <view class="data-card__title">
+       光照度
+     </view>
+     <view class="data-card__value">
+      {{Light}} Lx
+     </view>
+   </view>
+  </view>
+  <!-- 客厅灯 -->
+  <view class="data-card">
+   <image class="data-card__icon" src="/static/led.png" />
+   <view class="data-card__text">
+     <view class="data-card__title">
+       客厅灯
+     </view>
+     <view class="data-card__value">
+    <switch  checked="{{Led}}" bindchange="onLedChange" color="#3d7ef9"/>
+     </view>
+   </view>
+  </view>
+  <!-- 报警器 -->
+  <view class="data-card">
+   <image class="data-card__icon" src="/static/alarm.png" />
+   <view class="data-card__text">
+     <view class="data-card__title">
+       报警器
+     </view>
+     <view class="data-card__value">
+    <switch checked="{{Beep}}" bindchange="onBeepChange" color="#3d7ef9"/>
+     </view>
+   </view>
+  </view>
+</view>
+</view>

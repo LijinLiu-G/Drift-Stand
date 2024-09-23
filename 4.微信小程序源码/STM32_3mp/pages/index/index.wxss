@@ -1,0 +1,76 @@
+/**index.wxss**/
+
+.page-container {
+  padding: 36rpx;
+}
+
+.header-container {
+  background-color: #3d7ef9;
+  color: #fff;
+  border-radius: 36rpx;
+  padding: 32rpx 64rpx;
+}
+
+.header-container .header-air {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+
+.header-container .header-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 64rpx;
+}
+
+.header-container .header-ad {
+  margin-top: 36rpx;
+  font-size: 24rpx;
+}
+
+
+.data-container {
+  margin-top: 36rpx;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 300rpx);
+  grid-gap: 36rpx;
+}
+
+.data-container .data-card {
+  position: relative;
+  background-color: #fff;
+  height: 180rpx;
+  box-shadow: #d6d6d6 0 0 8rpx;
+  border-radius: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-container .data-card .data-card__icon {
+  position: absolute;
+  height: 72rpx;
+  width: 72rpx;
+  left: 32rpx;
+  top: 16rpx;
+}
+
+.data-container .data-card .data-card__text {
+  position: absolute;
+  top: 36rpx;
+  right: 24rpx;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.data-container .data-card .data-card__title {
+  font-size: 28rpx;
+  color: #7f7f7f;
+}
+
+.data-container .data-card .data-card__value {
+  padding-top: 16rpx;
+  font-size: 52rpx;
+  font-weight: bold;
+  color: #7f7f7f;
+}
